@@ -1,0 +1,447 @@
+{
+    "config": {
+        "name": "testcase description",
+        "variables": {}
+    },
+    "teststeps": [
+        {
+            "name": "/hcp/base/advert/list",
+            "request": {
+                "url": "https://test.user-center.ieltsbro.com/hcp/base/advert/list",
+                "method": "POST",
+                "headers": {
+                    "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOiIxNTkyNTMzMTU2ODIyMTUzNzUzIiwiaXNzIjoiMDk4ZjZiY2QiLCJhdWQiOiJyZXN0YXBpdXNlciIsImp0aSI6IjUzMzg3NSJ9.RdV_o_RdWMcQfy7Z2r_Ksj_Y596YQtiEkCxOiqjpygQ",
+                    "source": "0",
+                    "appState": "background",
+                    "Content-Type": "application/json",
+                    "User-Agent": "IeltsBroV3/10.8.0 (com.yasiBro.v2; build:1; iOS 13.6.0) Alamofire/4.9.0"
+                },
+                "json": {
+                    "productType": 0,
+                    "platform": "ios",
+                    "applyVersion": "10.8.0",
+                    "deviceId": "F5D1B6FD-6640-42F8-A234-E5CC256FCCD7",
+                    "pageRegion": 0
+                }
+            },
+            "validate": [
+                {
+                    "eq": [
+                        "status_code",
+                        200
+                    ]
+                },
+                {
+                    "eq": [
+                        "headers.Content-Type",
+                        "application/json;charset=UTF-8"
+                    ]
+                },
+                {
+                    "eq": [
+                        "content.status",
+                        0
+                    ]
+                },
+                {
+                    "eq": [
+                        "content.message",
+                        "success"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "/hcp/base/base/getAppUpdateVersion",
+            "request": {
+                "url": "https://test.user-center.ieltsbro.com/hcp/base/base/getAppUpdateVersion",
+                "params": {
+                    "appVersion": "10.8.0",
+                    "channelName": "",
+                    "osType": "ios"
+                },
+                "method": "GET",
+                "headers": {
+                    "source": "0",
+                    "User-Agent": "IeltsBroV3/10.8.0 (com.yasiBro.v2; build:1; iOS 13.6.0) Alamofire/4.9.0",
+                    "appState": "background",
+                    "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOiIxNTkyNTMzMTU2ODIyMTUzNzUzIiwiaXNzIjoiMDk4ZjZiY2QiLCJhdWQiOiJyZXN0YXBpdXNlciIsImp0aSI6IjUzMzg3NSJ9.RdV_o_RdWMcQfy7Z2r_Ksj_Y596YQtiEkCxOiqjpygQ"
+                }
+            },
+            "validate": [
+                {
+                    "eq": [
+                        "status_code",
+                        200
+                    ]
+                },
+                {
+                    "eq": [
+                        "headers.Content-Type",
+                        "application/json;charset=UTF-8"
+                    ]
+                },
+                {
+                    "eq": [
+                        "content.status",
+                        0
+                    ]
+                },
+                {
+                    "eq": [
+                        "content.message",
+                        "success"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "/hcp/base/advert/list",
+            "request": {
+                "url": "https://test.user-center.ieltsbro.com/hcp/base/advert/list",
+                "method": "POST",
+                "headers": {
+                    "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOiIxNTkyNTMzMTU2ODIyMTUzNzUzIiwiaXNzIjoiMDk4ZjZiY2QiLCJhdWQiOiJyZXN0YXBpdXNlciIsImp0aSI6IjUzMzg3NSJ9.RdV_o_RdWMcQfy7Z2r_Ksj_Y596YQtiEkCxOiqjpygQ",
+                    "source": "0",
+                    "appState": "background",
+                    "Content-Type": "application/json",
+                    "User-Agent": "IeltsBroV3/10.8.0 (com.yasiBro.v2; build:1; iOS 13.6.0) Alamofire/4.9.0"
+                },
+                "json": {
+                    "applyVersion": "10.8.0",
+                    "deviceId": "F5D1B6FD-6640-42F8-A234-E5CC256FCCD7",
+                    "pageRegion": 9,
+                    "productType": 0,
+                    "platform": "ios"
+                }
+            },
+            "validate": [
+                {
+                    "eq": [
+                        "status_code",
+                        200
+                    ]
+                },
+                {
+                    "eq": [
+                        "headers.Content-Type",
+                        "application/json;charset=UTF-8"
+                    ]
+                },
+                {
+                    "eq": [
+                        "content.status",
+                        0
+                    ]
+                },
+                {
+                    "eq": [
+                        "content.message",
+                        "success"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "/hcp/userInfo/updateUserPushToken",
+            "request": {
+                "url": "https://test.user-center.ieltsbro.com/hcp/userInfo/updateUserPushToken",
+                "method": "POST",
+                "headers": {
+                    "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOiIxNTkyNTMzMTU2ODIyMTUzNzUzIiwiaXNzIjoiMDk4ZjZiY2QiLCJhdWQiOiJyZXN0YXBpdXNlciIsImp0aSI6IjUzMzg3NSJ9.RdV_o_RdWMcQfy7Z2r_Ksj_Y596YQtiEkCxOiqjpygQ",
+                    "source": "0",
+                    "appState": "background",
+                    "Content-Type": "application/json",
+                    "User-Agent": "IeltsBroV3/10.8.0 (com.yasiBro.v2; build:1; iOS 13.6.0) Alamofire/4.9.0"
+                },
+                "json": {
+                    "appVersion": "10.8.0",
+                    "deviceType": "ios",
+                    "deviceUid": "F5D1B6FD-6640-42F8-A234-E5CC256FCCD7",
+                    "deviceName": "iPhone 8 Plus",
+                    "pushToken": "dea9b867c475831cf55d3e1318d478b9",
+                    "systemVersion": "13.6"
+                }
+            },
+            "validate": [
+                {
+                    "eq": [
+                        "status_code",
+                        200
+                    ]
+                },
+                {
+                    "eq": [
+                        "headers.Content-Type",
+                        "application/json;charset=UTF-8"
+                    ]
+                },
+                {
+                    "eq": [
+                        "content.status",
+                        0
+                    ]
+                },
+                {
+                    "eq": [
+                        "content.message",
+                        "success"
+                    ]
+                },
+                {
+                    "eq": [
+                        "content.content",
+                        true
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "/hcp/base/lesson/checkInClass",
+            "request": {
+                "url": "https://test.user-center.ieltsbro.com/hcp/base/lesson/checkInClass",
+                "method": "GET",
+                "headers": {
+                    "source": "0",
+                    "User-Agent": "IeltsBroV3/10.8.0 (com.yasiBro.v2; build:1; iOS 13.6.0) Alamofire/4.9.0",
+                    "appState": "background",
+                    "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOiIxNTkyNTMzMTU2ODIyMTUzNzUzIiwiaXNzIjoiMDk4ZjZiY2QiLCJhdWQiOiJyZXN0YXBpdXNlciIsImp0aSI6IjUzMzg3NSJ9.RdV_o_RdWMcQfy7Z2r_Ksj_Y596YQtiEkCxOiqjpygQ"
+                }
+            },
+            "validate": [
+                {
+                    "eq": [
+                        "status_code",
+                        200
+                    ]
+                },
+                {
+                    "eq": [
+                        "headers.Content-Type",
+                        "application/json;charset=UTF-8"
+                    ]
+                },
+                {
+                    "eq": [
+                        "content.status",
+                        0
+                    ]
+                },
+                {
+                    "eq": [
+                        "content.message",
+                        "success"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "/hcp/base/advert/list",
+            "request": {
+                "url": "https://test.user-center.ieltsbro.com/hcp/base/advert/list",
+                "method": "POST",
+                "headers": {
+                    "Content-Type": "application/json",
+                    "source": "0",
+                    "User-Agent": "IeltsBroV3/10.8.0 (com.yasiBro.v2; build:1; iOS 13.6.0) Alamofire/4.9.0",
+                    "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOiIxNTkyNTMzMTU2ODIyMTUzNzUzIiwiaXNzIjoiMDk4ZjZiY2QiLCJhdWQiOiJyZXN0YXBpdXNlciIsImp0aSI6IjUzMzg3NSJ9.RdV_o_RdWMcQfy7Z2r_Ksj_Y596YQtiEkCxOiqjpygQ"
+                },
+                "json": {
+                    "deviceId": "F5D1B6FD-6640-42F8-A234-E5CC256FCCD7",
+                    "pageRegion": 17,
+                    "productType": 0,
+                    "platform": "ios",
+                    "applyVersion": "10.8.0"
+                }
+            },
+            "validate": [
+                {
+                    "eq": [
+                        "status_code",
+                        200
+                    ]
+                },
+                {
+                    "eq": [
+                        "headers.Content-Type",
+                        "application/json;charset=UTF-8"
+                    ]
+                },
+                {
+                    "eq": [
+                        "content.status",
+                        0
+                    ]
+                },
+                {
+                    "eq": [
+                        "content.message",
+                        "success"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "/hcp/base/lesson/checkInClass",
+            "request": {
+                "url": "https://test.user-center.ieltsbro.com/hcp/base/lesson/checkInClass",
+                "method": "GET",
+                "headers": {
+                    "source": "0",
+                    "User-Agent": "IeltsBroV3/10.8.0 (com.yasiBro.v2; build:1; iOS 13.6.0) Alamofire/4.9.0",
+                    "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOiIxNTkyNTMzMTU2ODIyMTUzNzUzIiwiaXNzIjoiMDk4ZjZiY2QiLCJhdWQiOiJyZXN0YXBpdXNlciIsImp0aSI6IjUzMzg3NSJ9.RdV_o_RdWMcQfy7Z2r_Ksj_Y596YQtiEkCxOiqjpygQ"
+                }
+            },
+            "validate": [
+                {
+                    "eq": [
+                        "status_code",
+                        200
+                    ]
+                },
+                {
+                    "eq": [
+                        "headers.Content-Type",
+                        "application/json;charset=UTF-8"
+                    ]
+                },
+                {
+                    "eq": [
+                        "content.status",
+                        0
+                    ]
+                },
+                {
+                    "eq": [
+                        "content.message",
+                        "success"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "/hcp/base/lesson/checkAuth",
+            "request": {
+                "url": "https://test.user-center.ieltsbro.com/hcp/base/lesson/checkAuth",
+                "method": "GET",
+                "headers": {
+                    "source": "0",
+                    "User-Agent": "IeltsBroV3/10.8.0 (com.yasiBro.v2; build:1; iOS 13.6.0) Alamofire/4.9.0",
+                    "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOiIxNTkyNTMzMTU2ODIyMTUzNzUzIiwiaXNzIjoiMDk4ZjZiY2QiLCJhdWQiOiJyZXN0YXBpdXNlciIsImp0aSI6IjUzMzg3NSJ9.RdV_o_RdWMcQfy7Z2r_Ksj_Y596YQtiEkCxOiqjpygQ"
+                }
+            },
+            "validate": [
+                {
+                    "eq": [
+                        "status_code",
+                        200
+                    ]
+                },
+                {
+                    "eq": [
+                        "headers.Content-Type",
+                        "application/json;charset=UTF-8"
+                    ]
+                },
+                {
+                    "eq": [
+                        "content.status",
+                        0
+                    ]
+                },
+                {
+                    "eq": [
+                        "content.message",
+                        "success"
+                    ]
+                },
+                {
+                    "eq": [
+                        "content.content",
+                        true
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "/hcp/base/lesson/lessonDetail",
+            "request": {
+                "url": "https://test.user-center.ieltsbro.com/hcp/base/lesson/lessonDetail",
+                "method": "POST",
+                "headers": {
+                    "Content-Type": "application/json",
+                    "source": "0",
+                    "User-Agent": "IeltsBroV3/10.8.0 (com.yasiBro.v2; build:1; iOS 13.6.0) Alamofire/4.9.0",
+                    "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOiIxNTkyNTMzMTU2ODIyMTUzNzUzIiwiaXNzIjoiMDk4ZjZiY2QiLCJhdWQiOiJyZXN0YXBpdXNlciIsImp0aSI6IjUzMzg3NSJ9.RdV_o_RdWMcQfy7Z2r_Ksj_Y596YQtiEkCxOiqjpygQ"
+                },
+                "json": {
+                    "id": 12185
+                }
+            },
+            "validate": [
+                {
+                    "eq": [
+                        "status_code",
+                        200
+                    ]
+                },
+                {
+                    "eq": [
+                        "headers.Content-Type",
+                        "application/json;charset=UTF-8"
+                    ]
+                },
+                {
+                    "eq": [
+                        "content.status",
+                        0
+                    ]
+                },
+                {
+                    "eq": [
+                        "content.message",
+                        "success"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "/hcp/userInfo/getBanWordsByType/2",
+            "request": {
+                "url": "https://test.user-center.ieltsbro.com/hcp/userInfo/getBanWordsByType/2",
+                "method": "GET",
+                "headers": {
+                    "source": "0",
+                    "User-Agent": "IeltsBroV3/10.8.0 (com.yasiBro.v2; build:1; iOS 13.6.0) Alamofire/4.9.0",
+                    "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOiIxNTkyNTMzMTU2ODIyMTUzNzUzIiwiaXNzIjoiMDk4ZjZiY2QiLCJhdWQiOiJyZXN0YXBpdXNlciIsImp0aSI6IjUzMzg3NSJ9.RdV_o_RdWMcQfy7Z2r_Ksj_Y596YQtiEkCxOiqjpygQ"
+                }
+            },
+            "validate": [
+                {
+                    "eq": [
+                        "status_code",
+                        200
+                    ]
+                },
+                {
+                    "eq": [
+                        "headers.Content-Type",
+                        "application/json;charset=UTF-8"
+                    ]
+                },
+                {
+                    "eq": [
+                        "content.status",
+                        0
+                    ]
+                },
+                {
+                    "eq": [
+                        "content.message",
+                        "success"
+                    ]
+                }
+            ]
+        }
+    ]
+}
